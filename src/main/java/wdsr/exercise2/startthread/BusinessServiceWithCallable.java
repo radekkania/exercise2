@@ -32,7 +32,7 @@ public class BusinessServiceWithCallable {
 		// 3. sum up the results - each random number can be retrieved using future.get() method.
 		// 4. return the computed result.
 		
-		ArrayList<Future<Integer>> list = new ArrayList<Future<Integer>>(10);
+		ArrayList<Future<Integer>> list = new ArrayList<Future<Integer>>(100);
 		
 		for (int i = 0; i < 100; i ++) {
 			Callable<Integer> callable = new MyCallable(helper);
