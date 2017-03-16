@@ -14,7 +14,6 @@ public class BusinessServiceWithThreadAndRunnable {
 	 * @param callback Callback to be invoked when Fibonacci number is found.
 	 */
 	public void computeFibonacci(int n, FibonacciCallback callback) {
-		// TODO Task: execute the logic below in a new Thread, use Runnable interface.
 		new Thread(new MyRunnable(n, callback, helper)).start();
 	}
 }
